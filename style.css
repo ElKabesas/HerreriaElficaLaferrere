@@ -91,7 +91,7 @@ body h2 {
     display: flex;
     justify-content: start;
     margin-top: 50rem;
-    width: 30rem;
+    width: 40rem;
     height: 60rem;
     padding: 10px;
     color: var(--uno);
@@ -136,6 +136,7 @@ section {
     /*2 columnas para parrafo y video*/
     display: flex;
     justify-content: center;
+    gap: 15px;
 }
 
 label {
@@ -144,9 +145,22 @@ label {
     display: block;
 }
 
-.columnasgrid {
 
-    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   column-gap: 2rem;
-}
+.tamañoImagenes {
+
+    width: 300px;
+    
+    
+    
+    }
+    
+    .gridInicios {
+    
+            display: grid;
+            grid-template-columns: repeat(4, 2fr);
+            grid-template-rows: repeat(2, 2fr);
+            grid-column-gap: 9px;
+            grid-row-gap: 9px;
+    
+    
+    }
