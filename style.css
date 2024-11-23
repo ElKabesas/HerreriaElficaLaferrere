@@ -1,0 +1,152 @@
+:root {
+    --uno: #996666;
+    --dos: #666666;
+    --tres: #663300;
+}
+
+
+html {
+    font-size: 63%;
+}
+
+body {
+    font-size: 16px;
+}
+
+
+#principal {
+    /* imagen de fondo */
+    background-image: url(pxfuel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+body h1 {
+    /* atelier ludwing*/
+    color: var(--uno);
+    font-size: 5rem;
+    text-align: center;
+    font-family: "MedievalSharp", cursive;
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+.navegacion {
+    /* del div, fondo de la barra */
+    background-color: var(--dos);
+    margin: 5%;
+    padding: 1%;
+}
+
+.navegacion-principal {
+    /*del nav, contenido de la barra*/
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+
+nav a:hover {
+    /* fondo cuando tocas un elemento de la barra */
+    background-color: black;
+}
+
+.navegacion-principal_texto {
+    /*enlaces de la barra nav*/
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.fondo {
+    /*imagen fondo del h2*/
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-image: url(atelier.avif);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 410px;
+}
+
+
+body h2 {
+    /*encontra todo para tu caceria*/
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    font-family: "MedievalSharp", cursive;
+    font-weight: 250px;
+    font-style: normal;
+}
+
+.parrafo {
+    /*parrafo al lado del video*/
+    background-color: rgb(0 0 0 / 70%);
+    border: thin white 2rem;  /*no se me aplica*/
+    display: flex;
+    border-width: 20rem;
+    display: flex;
+    justify-content: start;
+    margin-top: 50rem;
+    width: 30rem;
+    height: 60rem;
+    padding: 10px;
+    color: var(--uno);
+    font-size: 5rem;
+    text-align: center;
+    font-family: "MedievalSharp", cursive;
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+.fondovideo {
+    /*alineacion video*/
+    display: flex;
+    margin-top: 50rem;
+    margin-bottom: 10rem;
+
+}
+
+.cajaformulario {
+    /*formulario*/
+    display: flex;
+    justify-self: auto;
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 25rem;
+    height: 25rem;
+    padding: 10px;
+    background-color: var(--dos);
+    border-color: black;
+}
+
+section {
+    /*sombreado de la imagen del h2*/
+    position: absolute;
+    background-color: rgb(0 0 0 / 70%);
+    width: 100%;
+    height: 100%;
+}
+
+.gridindex {
+    /*2 columnas para parrafo y video*/
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    /*formulario en bloque*/
+
+    display: block;
+}
+
+.columnasgrid {
+
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   column-gap: 2rem;
+}
