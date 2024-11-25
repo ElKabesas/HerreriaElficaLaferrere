@@ -85,7 +85,8 @@ body h2 {
 .parrafo {
     /*parrafo al lado del video*/
     background-color: rgb(0 0 0 / 70%);
-    border: thin white 2rem;  /*no se me aplica*/
+    border: thin white 2rem;
+    /*no se me aplica*/
     display: flex;
     border-width: 20rem;
     display: flex;
@@ -148,19 +149,28 @@ label {
 
 .tamañoImagenes {
 
-    width: 300px;
+    width: 35rem;
+
+
     
-    
-    
-    }
-    
-    .gridInicios {
-    
-            display: grid;
-            grid-template-columns: repeat(4, 2fr);
-            grid-template-rows: repeat(2, 2fr);
-            grid-column-gap: 9px;
-            grid-row-gap: 9px;
-    
-    
-    }
+}
+
+.gridInicios {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 2fr);
+    grid-column-gap: 9px;
+    grid-row-gap: 9px;
+}
+
+.container-image {
+width: 35rem;
+
+}
+
+.container-image__texto {
+
+    text-align: center;
+    font-size: 2rem;
+}
