@@ -44,7 +44,7 @@ body h1 {
 .navegacion-principal {
     /*del nav, contenido de la barra*/
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 2rem;
 }
 
@@ -59,6 +59,7 @@ nav a:hover {
     color: white;
     text-decoration: none;
 }
+
 
 .fondo {
     /*imagen fondo del h2*/
@@ -104,23 +105,24 @@ body h2 {
 
 }
 
+
+
+
 .fondovideo {
     /*alineacion video*/
-    display: flex;
     margin-top: 50rem;
     margin-bottom: 10rem;
-
 }
 
 .cajaformulario {
     /*formulario*/
     display: flex;
-    justify-self: auto;
+    justify-self: end;
     text-align: start;
     font-family: Arial, Helvetica, sans-serif;
     width: 25rem;
     height: 25rem;
-    padding: 10px;
+    padding: 2%;
     background-color: var(--dos);
     border-color: black;
 }
@@ -140,6 +142,9 @@ section {
     gap: 15px;
 }
 
+
+
+
 label {
     /*formulario en bloque*/
 
@@ -149,11 +154,11 @@ label {
 
 .tamañoImagenes {
 
-    width: 35rem;
-
-
-    
+    width: 34rem;
 }
+
+
+
 
 .gridInicios {
 
@@ -165,12 +170,101 @@ label {
 }
 
 .container-image {
-width: 35rem;
+    width: 35rem;
 
 }
 
 .container-image__texto {
 
+
     text-align: center;
     font-size: 2rem;
 }
+
+
+
+@media screen and (orientation: portrait) {
+    .navegacion-principal  {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px){
+
+.navegacion  {
+background-color: black;
+margin: 10%;
+padding: 10px;
+ }
+
+ nav a:hover {
+    
+    background-color: white;
+}
+
+.navegacion-principal_texto {
+    
+    font-size: 20px;
+    color: var(--uno);
+}
+
+   .parrafo {
+
+    width: 20rem;
+    height: 30rem;
+    padding: 5px;
+    font-size: 2rem;
+} 
+
+.gridindex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.gridindex iframe {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+.cajaformulario {
+  width: 80%;
+  max-width: 550px;
+}
+
+.cajaformulario form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.cajaformulario input,
+.cajaformulario select,
+.cajaformulario textarea {
+  width: 80%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+
+.fondovideo video {
+    width: 100%;
+    height: auto;
+    max-width: 480px; /* Mantiene el ancho máximo original */
+    object-fit: contain; /* Mantiene la proporción del video */
+    margin: 0 auto; /* Centra el video */
+    display: block;
+}
+
+
+
+    }
+
