@@ -151,37 +151,58 @@ label {
     display: block;
 }
 
+/*estilo para las imagenes de la grilla */
 
 .tamañoImagenes {
+    width: 50%;
+    height: 300px;
+ }
 
-    width: 34rem;
+ /* Estilos para el contenedor de texto */
+.container-image__texto > div {
+    padding: 15px;
+    text-align: center;
 }
 
-
-
-
+/* Estilos para el contenedor principal del grid */
 .gridInicios {
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 2fr);
-    grid-column-gap: 9px;
-    grid-row-gap: 9px;
-}
-
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+ }
 .container-image {
-    width: 35rem;
+    width: 6px;
 
 }
+/* Efecto hover para las tarjetas */
+.container-image__texto:hover {
+    transform: scale(1.05);
+}
 
+/* Estilos para el contenedor de imagen y texto */
 .container-image__texto {
-
-
-    text-align: center;
-    font-size: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
+/* Estilos para los párrafos de texto */
+.container-image__texto p:first-child {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
 
+.container-image__texto p:last-child {
+    font-size: 1.1em;
+    color: #4CAF50;
+    font-weight: bold;
+}
 
 .body-quienes {
     font-family: 'Roboto', sans-serif;
@@ -321,5 +342,17 @@ padding: 10px;
 }
 
 
+    }
+
+    @media screen and (max-width: 768px) {
+        .gridInicios {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+        .gridInicios {
+            grid-template-columns: 1fr;
+        }
     }
 
