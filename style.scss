@@ -2,6 +2,10 @@ $color-primario: #996666;
 $color-secundario: #666666;
 $color-terceario: #663300;
 
+/* el unico header que tengo es el de quienes-somos.html 
+pero no se porque no se aplica, en cambio si lo hago de 
+css poniendole backgroundcolor si se coloca, pero en
+sass no ;( */
 
    header {
 background-color: $color-secundario;
