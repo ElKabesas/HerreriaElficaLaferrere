@@ -3,7 +3,7 @@ $primary-color: #3498db;
 $secondary-color: #2ecc71;
 $text-color: #333;
 $background-color: #f4f4f4;
-$card-shadow: 0 4px 6px rgba(0,0,0,0.1);
+$card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
 /* mixins para reutilizar estilos*/
 @mixin flex-center {
@@ -32,7 +32,7 @@ $card-shadow: 0 4px 6px rgba(0,0,0,0.1);
 
         &:hover {
             transform: scale(1.05);
-            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
         }
 
         .tamañoImagenes {
@@ -47,8 +47,9 @@ $card-shadow: 0 4px 6px rgba(0,0,0,0.1);
             font-weight: bold;
             color: $text-color;
             text-align: center;
-            
+
             &::before {
+        
                 content: 'Precio: $';
                 margin-right: 5px;
                 color: $primary-color;

@@ -1,107 +1,107 @@
 :root {
-    --uno: #996666;
-    --dos: #666666;
-    --tres: #663300;
+  --uno: #996666;
+  --dos: #666666;
+  --tres: #663300;
 }
 
 
 html {
-    font-size: 63%;
+  font-size: 63%;
 }
 
 body {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 
 #principal {
-    /* imagen de fondo */
-    background-image: url(pxfuel.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+  /* imagen de fondo */
+  background-image: url(pxfuel.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 body h1 {
-    /* atelier ludwing*/
-    color: var(--uno);
-    font-size: 5rem;
-    text-align: center;
-    font-family: "MedievalSharp", cursive;
-    font-weight: bold;
-    font-style: normal;
+  /* atelier ludwing*/
+  color: var(--uno);
+  font-size: 5rem;
+  text-align: center;
+  font-family: "MedievalSharp", cursive;
+  font-weight: bold;
+  font-style: normal;
 }
 
 
 .navegacion {
-    /* del div, fondo de la barra */
-    background-color: var(--dos);
-    margin: 5%;
-    padding: 1%;
+  /* del div, fondo de la barra */
+  background-color: var(--dos);
+  margin: 5%;
+  padding: 1%;
 }
 
 .navegacion-principal {
-    /*del nav, contenido de la barra*/
-    display: flex;
-    justify-content: space-between;
-    font-size: 2rem;
+  /*del nav, contenido de la barra*/
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
 }
 
 nav a:hover {
-    /* fondo cuando tocas un elemento de la barra */
-    background-color: black;
+  /* fondo cuando tocas un elemento de la barra */
+  background-color: black;
 }
 
 .navegacion-principal_texto {
-    /*enlaces de la barra nav*/
-    font-size: 25px;
-    color: white;
-    text-decoration: none;
+  /*enlaces de la barra nav*/
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
 }
 
 
 .fondo {
-    /*imagen fondo del h2*/
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background-image: url(atelier.avif);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    height: 410px;
+  /*imagen fondo del h2*/
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-image: url(atelier.avif);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  height: 410px;
 }
 
 
 body h2 {
-    /*encontra todo para tu caceria*/
-    color: white;
-    font-size: 4rem;
-    text-align: center;
-    font-family: "MedievalSharp", cursive;
-    font-weight: 250px;
-    font-style: normal;
+  /*encontra todo para tu caceria*/
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  font-family: "MedievalSharp", cursive;
+  font-weight: 250px;
+  font-style: normal;
 }
 
 .parrafo {
-    /*parrafo al lado del video*/
-    background-color: rgb(0 0 0 / 70%);
-    border: thin white 2rem;
-    /*no se me aplica*/
-    display: flex;
-    border-width: 20rem;
-    display: flex;
-    justify-content: start;
-    margin-top: 50rem;
-    width: 40rem;
-    height: 60rem;
-    padding: 10px;
-    color: var(--uno);
-    font-size: 5rem;
-    text-align: center;
-    font-family: "MedievalSharp", cursive;
-    font-weight: bold;
-    font-style: normal;
+  /*parrafo al lado del video*/
+  background-color: rgb(0 0 0 / 70%);
+  border: thin white 2rem;
+  /*no se me aplica*/
+  display: flex;
+  border-width: 20rem;
+  display: flex;
+  justify-content: start;
+  margin-top: 50rem;
+  width: 40rem;
+  height: 60rem;
+  padding: 10px;
+  color: var(--uno);
+  font-size: 5rem;
+  text-align: center;
+  font-family: "MedievalSharp", cursive;
+  font-weight: bold;
+  font-style: normal;
 
 }
 
@@ -109,350 +109,349 @@ body h2 {
 
 
 .fondovideo {
-    /*alineacion video*/
-    margin-top: 50rem;
-    margin-bottom: 10rem;
+  /*alineacion video*/
+  margin-top: 50rem;
+  margin-bottom: 10rem;
 }
 
 .cajaformulario {
-    /*formulario*/
-    display: flex;
-    justify-self: end;
-    text-align: start;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 25rem;
-    height: 25rem;
-    padding: 2%;
-    background-color: var(--dos);
-    border-color: black;
+  /*formulario*/
+  display: flex;
+  justify-self: end;
+  text-align: start;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 25rem;
+  height: 25rem;
+  padding: 2%;
+  background-color: var(--dos);
+  border-color: black;
 }
 
 section {
-    /*sombreado de la imagen del h2*/
-    position: absolute;
-    background-color: rgb(0 0 0 / 70%);
-    width: 100%;
-    height: 100%;
+  /*sombreado de la imagen del h2*/
+  position: absolute;
+  background-color: rgb(0 0 0 / 70%);
+  width: 100%;
+  height: 100%;
 }
 
 .gridindex {
-    /*2 columnas para parrafo y video*/
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+  /*2 columnas para parrafo y video*/
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 
 
 
 label {
-    /*formulario en bloque*/
+  /*formulario en bloque*/
 
-    display: block;
+  display: block;
 }
 
 /*estilo para las imagenes de la grilla 
 (ya no sirve porque esta el sass)
 
 .tamañoImagenes {
-    width: 50%;
-    height: 300px;
+  width: 50%;
+  height: 300px;
 }*/
 
 /* Estilos para el contenedor de texto */
 .container-image__texto>div {
-    padding: 15px;
-    text-align: center;
+  padding: 15px;
+  text-align: center;
 }
 
 
 /* Estilos para el contenedor principal del grid (ya
 no sirve porque esta el sass primero)
 .gridInicios {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-    background-color: #f4f4f4;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
 } 
 */
 
 .container-image {
-    width: 6px;
+  width: 6px;
 
 }
 
 /* Efecto hover para las tarjetas */
 .container-image__texto:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 /* Estilos para el contenedor de imagen y texto 
 (ya no sirve porque esta el sass)
 .container-image__texto {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }*/
 
 /* Estilos para los párrafos de texto */
 .container-image__texto p:first-child {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
 }
 
 .container-image__texto p:last-child {
-    font-size: 1.1em;
-    color: #4CAF50;
-    font-weight: bold;
+  font-size: 1.1em;
+  color: #4CAF50;
+  font-weight: bold;
 }
 .body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #c9c1d4;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .body-quienes {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 header {
-    background-image: url(quienes-somos.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    color: #ecf0f1;
-    padding: 40px 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    max-width: 500px;
-    width: 100%;
+  background-image: url(quienes-somos.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #ecf0f1;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
 }
 
 header h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #e74c3c;
-    border-bottom: 2px solid #e74c3c;
-    padding-bottom: 10px;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #e74c3c;
+  border-bottom: 2px solid #e74c3c;
+  padding-bottom: 10px;
 }
 
 header span {
-    display: block;
-    margin: 15px 0;
-    font-weight: 300;
-    font-size: 1.1em;
-    color: #bdc3c7;
+  display: block;
+  margin: 15px 0;
+  font-weight: 300;
+  font-size: 1.1em;
+  color: #bdc3c7;
 }
 
 header span:first-of-type {
-    font-weight: bold;
-    color: #3498db;
-    font-size: 2.3em;
+  font-weight: bold;
+  color: #3498db;
+  font-size: 2.3em;
 }
 
 header p {
-    background-color: rgba(0, 0, 0, 0.7);
-    font-weight: bold;
-    color: #ecf0f1;
-    padding: 10px;
-    border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+  color: #ecf0f1;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    transform: perspective(1000px) rotateX(10deg);
-    transition: all 0.3s ease;
-    box-shadow: 0 -5px 15px rgba(0,0,0,0.3);
-    cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  transform: perspective(1000px) rotateX(10deg);
+  transition: all 0.3s ease;
+  box-shadow: 0 -5px 15px rgba(0,0,0,0.3);
+  cursor: pointer;
 
 
 }
 
 .footer:hover {
-    transform: perspective(1000px) rotateX(0deg) scale(1.02);
-    box-shadow: 0 -10px 20px rgba(0,0,0,0.4);
+  transform: perspective(1000px) rotateX(0deg) scale(1.02);
+  box-shadow: 0 -10px 20px rgba(0,0,0,0.4);
 }
 
 .footer div {
-    flex: 1;
-    min-width: 200px;
-    margin: 10px;
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
 }
 
 .footer div:last-child {
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 0.9em;
-    opacity: 0.7;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+  opacity: 0.7;
 }
 
 @media screen and (orientation: portrait) {
-    .navegacion-principal {
-        flex-direction: column;
-        gap: 10px;
-    }
+  .navegacion-principal {
+      flex-direction: column;
+      gap: 10px;
+  }
 }
 
 @media (max-width: 768px) {
 
-    .navegacion {
-        background-color: black;
-        margin: 10%;
-        padding: 10px;
-    }
+  .navegacion {
+      background-color: black;
+      margin: 10%;
+      padding: 10px;
+  }
 
-    nav a:hover {
+  nav a:hover {
 
-        background-color: white;
-    }
+      background-color: white;
+  }
 
-    .navegacion-principal_texto {
+  .navegacion-principal_texto {
 
-        font-size: 20px;
-        color: var(--uno);
-    }
+      font-size: 20px;
+      color: var(--uno);
+  }
 
-    .parrafo {
+  .parrafo {
 
-        width: 20rem;
-        height: 30rem;
-        padding: 5px;
-        font-size: 2rem;
-    }
+      width: 20rem;
+      height: 30rem;
+      padding: 5px;
+      font-size: 2rem;
+  }
 
-    .gridindex {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        width: 100%;
-        max-width: 500px;
-        margin: 0 auto;
-    }
+  .gridindex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+  }
 
-    .gridindex iframe {
-        width: 100%;
-        max-width: 550px;
-        height: auto;
-        aspect-ratio: 16 / 9;
-    }
+  .gridindex iframe {
+      width: 100%;
+      max-width: 550px;
+      height: auto;
+      aspect-ratio: 16 / 9;
+  }
 
-    .cajaformulario {
-        width: 80%;
-        max-width: 550px;
-    }
+  .cajaformulario {
+      width: 80%;
+      max-width: 550px;
+  }
 
-    .cajaformulario form {
-        display: flex;
-        flex-direction: column;
+  .cajaformulario form {
+      display: flex;
+      flex-direction: column;
 
-    }
+  }
 
-    .cajaformulario input,
-    .cajaformulario select,
-    .cajaformulario textarea {
-        width: 80%;
-        padding: 10px;
-        box-sizing: border-box;
-    }
+  .cajaformulario input,
+  .cajaformulario select,
+  .cajaformulario textarea {
+      width: 80%;
+      padding: 10px;
+      box-sizing: border-box;
+  }
 
 
 
-    .fondovideo video {
-        width: 100%;
-        height: auto;
-        max-width: 480px;
-        /* Mantiene el ancho máximo original */
-        object-fit: contain;
-        /* Mantiene la proporción del video */
-        margin: 0 auto;
-        /* Centra el video */
-        display: block;
-    }
+  .fondovideo video {
+      width: 100%;
+      height: auto;
+      max-width: 480px;
+      /* Mantiene el ancho máximo original */
+      object-fit: contain;
+      /* Mantiene la proporción del video */
+      margin: 0 auto;
+      /* Centra el video */
+      display: block;
+  }
 
 
 }
 
 /* ya no sirve porque esta el SASS
 @media screen and (max-width: 768px) {
-    .gridInicios {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .gridInicios {
+      grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .gridInicios {
-        grid-template-columns: 1fr;
-    }
+  .gridInicios {
+      grid-template-columns: 1fr;
+  }
 }*/
 
 @charset "UTF-8";
 .gridInicios {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
-  background-color: #f4f4f4;
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+gap: 20px;
+padding: 20px;
+background-color: #f4f4f4;
 }
 .gridInicios .container-image__texto {
-  background-color: white;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
+background-color: white;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease-in-out;
 }
 .gridInicios .container-image__texto:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+transform: scale(1.05);
+box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 .gridInicios .container-image__texto .tamañoImagenes {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
+width: 100%;
+height: 300px;
+object-fit: cover;
 }
 .gridInicios .container-image__texto p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  font-weight: bold;
-  color: #333;
-  text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 15px;
+font-weight: bold;
+color: #333;
+text-align: center;
 }
 .gridInicios .container-image__texto p::before {
-  content: "Precio: $";
-  margin-right: 5px;
-  color: #3498db;
+content: "Precio: $";
+margin-right: 5px;
+color: #3498db;
 }
 .gridInicios .container-image__texto:hover p {
-  color: #2ecc71;
+color: #2ecc71;
 }
 
 @media (max-width: 768px) {
-  .gridInicios {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
-  }
+.gridInicios {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
 }
 
 /*# sourceMappingURL=style.css.map */
