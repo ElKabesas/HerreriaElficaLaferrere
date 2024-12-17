@@ -151,12 +151,13 @@ label {
     display: block;
 }
 
-/*estilo para las imagenes de la grilla */
+/*estilo para las imagenes de la grilla 
+(ya no sirve porque esta el sass)
 
 .tamañoImagenes {
     width: 50%;
     height: 300px;
-}
+}*/
 
 /* Estilos para el contenedor de texto */
 .container-image__texto>div {
@@ -164,14 +165,17 @@ label {
     text-align: center;
 }
 
-/* Estilos para el contenedor principal del grid */
+
+/* Estilos para el contenedor principal del grid (ya
+no sirve porque esta el sass primero)
 .gridInicios {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
     background-color: #f4f4f4;
-}
+} 
+*/
 
 .container-image {
     width: 6px;
@@ -183,14 +187,15 @@ label {
     transform: scale(1.05);
 }
 
-/* Estilos para el contenedor de imagen y texto */
+/* Estilos para el contenedor de imagen y texto 
+(ya no sirve porque esta el sass)
 .container-image__texto {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease;
-}
+}*/
 
 /* Estilos para los párrafos de texto */
 .container-image__texto p:first-child {
@@ -388,6 +393,7 @@ header p {
 
 }
 
+/* ya no sirve porque esta el SASS
 @media screen and (max-width: 768px) {
     .gridInicios {
         grid-template-columns: repeat(2, 1fr);
@@ -398,4 +404,55 @@ header p {
     .gridInicios {
         grid-template-columns: 1fr;
     }
+}*/
+
+@charset "UTF-8";
+.gridInicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
 }
+.gridInicios .container-image__texto {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+.gridInicios .container-image__texto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.gridInicios .container-image__texto .tamañoImagenes {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.gridInicios .container-image__texto p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+.gridInicios .container-image__texto p::before {
+  content: "Precio: $";
+  margin-right: 5px;
+  color: #3498db;
+}
+.gridInicios .container-image__texto:hover p {
+  color: #2ecc71;
+}
+
+@media (max-width: 768px) {
+  .gridInicios {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

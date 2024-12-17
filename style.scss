@@ -1,13 +1,71 @@
-$color-primario: #996666;
-$color-secundario: #666666;
-$color-terceario: #663300;
+/* variables*/
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$text-color: #333;
+$background-color: #f4f4f4;
+$card-shadow: 0 4px 6px rgba(0,0,0,0.1);
 
-/* el unico header que tengo es el de quienes-somos.html 
-pero no se porque no se aplica, en cambio si lo hago de 
-css poniendole backgroundcolor si se coloca, pero en
-sass no ;( */
+/* mixins para reutilizar estilos*/
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-   header {
-background-color: $color-secundario;
+@mixin transition-smooth {
+    transition: all 0.3s ease-in-out;
+}
 
-   }
+.gridInicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: $background-color;
+
+    .container-image__texto {
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: $card-shadow;
+        @include transition-smooth;
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+
+        .tamañoImagenes {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        p {
+            @include flex-center;
+            padding: 15px;
+            font-weight: bold;
+            color: $text-color;
+            text-align: center;
+            
+            &::before {
+                content: 'Precio: $';
+                margin-right: 5px;
+                color: $primary-color;
+            }
+        }
+
+        /* efecto hover para el precio*/
+        &:hover p {
+            color: $secondary-color;
+        }
+    }
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .gridInicios {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+    }
+}
